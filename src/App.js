@@ -18,14 +18,14 @@ class App extends React.Component {
   handleDismiss = () => this.setState({ visible: false })
   handleAbout = () => {
     let message = <div className="englishText"><p><b>Infernal converter converts latin letters into infernal letters.</b></p>
-      <p>Infernal is dnd language. https://forgottenrealms.fandom.com/wiki/Infernal_language</p>
+      <p>Infernal is dnd language. <a href='https://forgottenrealms.fandom.com/wiki/Infernal_language'>Read here</a> </p>
 
       <p>This is only for fun and a small gift for my son who is a dungeon master and needed some documents written in infernal for his players to translate.</p>
 
       <p>I have used the Barazhad Font made by "Pixel Sagas" - "Neale Davidson". which is shareware so I guess it is okay to use for this non-commercial project.
-      https://www.fontspace.com/barazhad-font-f20325</p>
+      <a href='https://www.fontspace.com/barazhad-font-f20325'>Link to fontspace</a></p>
 
-      <p>Besides using React I have also used react-to-print from this repository https://github.com/gregnb/react-to-print which is a great tool for any react project that requires perfect printing.</p> </div>
+      <p>Besides using React I have also used react-to-print from this repository <a href='https://github.com/gregnb/react-to-print'>React-to-print</a> which is a great tool for any react project that requires perfect printing.</p> </div>
     this.setState({ message, visible: true })
 
   }
@@ -46,11 +46,12 @@ class App extends React.Component {
           <Menu.Item onClick={this.handleAbout}>About</Menu.Item>
         </Menu>
         {this.state.visible && <Message
+        compact
           onDismiss={this.handleDismiss}
-          header='about'
+          header='About this app'
           content={this.state.message}
         />}
-        <Grid columns="16">
+        {window.outerWidth>800&&<Grid columns="16">
           <Grid.Row >
             <Grid.Column width="5">
               <div className="englishText">
@@ -64,8 +65,21 @@ class App extends React.Component {
                 {this.state.written}</div>
                 <div className="pagebreak"><span className="font-face-normal"><h2 >{this.state.header}</h2>
                   {this.state.written}</span></div></div></div>
-            </Grid.Column></Grid.Row></Grid>
-
+            </Grid.Column></Grid.Row></Grid>}
+            {window.outerWidth<=800&&<Grid columns="1">
+            <Grid.Row>
+              <div className="englishText">
+                <p>Input header</p>
+                <input type="text" defaultValue={this.state.header} onChange={this.handleChange} id="header" />
+                <br></br><br></br>
+                <p>Input text</p>
+                <textarea onChange={this.handleChange} defaultValue={this.state.written} id="written" /></div></Grid.Row>
+            <Grid.Row>
+              <div className="hasToLookLikePaper"><div ref={el => (this.forwardRef = el)}><div className="font-face-in"><h2 >{this.state.header}</h2>
+                {this.state.written}</div>
+                <div className="pagebreak"><span className="font-face-normal"><h2 >{this.state.header}</h2>
+                  {this.state.written}</span></div></div></div>
+            </Grid.Row></Grid>}
       </div>
     );
   }
