@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/infernalconverter/static/css/main.9ec0c4db.chunk.css",
+    "main.css": "/infernalconverter/static/css/main.ed554cb0.chunk.css",
     "main.js": "/infernalconverter/static/js/main.ca20f53e.chunk.js",
     "main.js.map": "/infernalconverter/static/js/main.ca20f53e.chunk.js.map",
     "runtime-main.js": "/infernalconverter/static/js/runtime-main.024b83fc.js",
@@ -10,7 +10,7 @@
     "static/js/2.a44d806b.chunk.js.map": "/infernalconverter/static/js/2.a44d806b.chunk.js.map",
     "index.html": "/infernalconverter/index.html",
     "static/css/2.3d47f7a8.chunk.css.map": "/infernalconverter/static/css/2.3d47f7a8.chunk.css.map",
-    "static/css/main.9ec0c4db.chunk.css.map": "/infernalconverter/static/css/main.9ec0c4db.chunk.css.map",
+    "static/css/main.ed554cb0.chunk.css.map": "/infernalconverter/static/css/main.ed554cb0.chunk.css.map",
     "static/js/2.a44d806b.chunk.js.LICENSE.txt": "/infernalconverter/static/js/2.a44d806b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/infernalconverter/static/media/BarazhadBoldItalic-XMWd.fdb12455.ttf",
     "static/media/semantic.min.css": "/infernalconverter/static/media/outline-icons.ddae9b1b.woff"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.024b83fc.js",
     "static/css/2.3d47f7a8.chunk.css",
     "static/js/2.a44d806b.chunk.js",
-    "static/css/main.9ec0c4db.chunk.css",
+    "static/css/main.ed554cb0.chunk.css",
     "static/js/main.ca20f53e.chunk.js"
   ]
 }
