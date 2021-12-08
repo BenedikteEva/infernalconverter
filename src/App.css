@@ -67,6 +67,7 @@
       src: local("Barazhad-PlXr"),
        url("./fonts/barazhad-font/Barazhad-PlXr.ttf") format("truetype");
       font-weight: bold;
+      
     
       }
   
@@ -159,4 +160,12 @@ border-top-right-radius: 7px;
 
   
     }
+    .font-face-in {
+      font-family: "Barazhad-PlXr";
+      font-size: 24px;
+      white-space: pre;
+      word-wrap: break-word;
+      word-break: normal;
+      
+     }
   }
