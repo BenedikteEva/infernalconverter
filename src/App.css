@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  text-align: left;
+  padding:36px;
+  background-color: #D9D9D9;
 }
 
 .App-logo {
@@ -27,6 +29,17 @@
 .App-link {
   color: #61dafb;
 }
+.header{
+  background-image: url('./images/Baatezu_-_Sam_Wood.jpg');
+  background-position: 100%;
+  background-repeat:repeat-y;
+  background-color: grey;
+  color:black;
+}
+.headLine{
+  width:100vw;
+  text-align: center;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +49,114 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: "BarazhadBold-LGZZ";
+  src: local("BarazhadBold-LGZZ"),
+   url("./fonts/barazhad-font/BarazhadBold-LGZZ.ttf") format("truetype");
+  font-weight: bold;
+  }
+  @font-face {
+    font-family: "BarazhadBoldItalic-XMWd";
+    src: local("BarazhadBoldItalic-XMWd"),
+     url("./fonts/barazhad-font/BarazhadBoldItalic-XMWd.ttf") format("truetype");
+    font-weight: bold;
+  
+    }
+    @font-face {
+      font-family: "Barazhad-PlXr";
+      src: local("Barazhad-PlXr"),
+       url("./fonts/barazhad-font/Barazhad-PlXr.ttf") format("truetype");
+      font-weight: bold;
+    
+      }
+  
+.font-face-in {
+ font-family: "Barazhad-PlXr";
+ font-size: 24px;
+
+ 
+}
+.font-face-in h2 {
+  font-family: "BarazhadBold-LGZZ";
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-weight: bold;
+  font-size: 36px;
+  
+ }
+ .font-face-normal {
+  font-family:"fantasy";
+  font-size: 24px;
+ 
+  
+ }
+ .font-face-normal h2 {
+   font-family: "fantasy";
+   text-align: center;
+   padding-bottom: 16px;
+   padding-top: 16px;
+   font-weight: bold;
+   font-size: 36px;
+   
+  }
+  .pagebreak{
+   color:beige;
+  }
+
+
+  .hasToLookLikePaper{
+    overflow: ellipsis;
+    background-color: beige;
+border: 1px solid #D9D9D9;
+width: 793.7px;
+white-space: pre-line;
+word-wrap: normal;
+word-break: normal;
+padding-left: 36px;
+min-height: 1152px;
+padding-bottom: 46px;
+box-shadow: 2px 5px 2px -1px rgba(0,0,0,0.2), 4px 4px 2px 0px rgba(0,0,0,0.14), 7px 10px 2px 0px rgba(0,0,0,0.12);
+border-top-right-radius: 7px;
+
+  }
+ .englishText{
+   width:25vw;
+   white-space: normal;
+ 
+ }
+ .englishText textarea{
+  width:25vw;
+  min-height: 10vh;
+}
+@Page {
+  /* You can only change the size, margins, orphans, widows and page breaks here */
+
+  /* Paper size and page orientation */
+  size: A4;
+  
+  /* Margin per single side of the page */
+  margin-left:36px;
+  margin-top: 16px;
+  margin-right: 36px;
+  margin-bottom: 26px;
+  
+  }
+  @media print{
+    .pagebreak{
+      page-break-before: always;
+      color:black;
+      white-space: pre-line;
+      word-wrap: normal;
+      word-break: normal;
+
+    }
+    .hasToLookLikePaper{
+        overflow: ellipsis;
+        white-space: pre;
+        word-wrap: break-word;
+        word-break: normal;
+
+  
+    }
+  }
