@@ -130,6 +130,17 @@ border-top-right-radius: 7px;
   width:25vw;
   min-height: 10vh;
 }
+@media only screen and (max-width: 800px) {
+  .englishText textarea{
+    width:100vw;
+    min-height: 10vh;
+  }
+  .englishText input[type=text]{
+    width:100vw;
+    white-space: normal;
+  
+  }
+}
 @Page {
   /* You can only change the size, margins, orphans, widows and page breaks here */
 
@@ -143,6 +154,7 @@ border-top-right-radius: 7px;
   margin-bottom: 26px;
   
   }
+
   @media print{
     .pagebreak{
       page-break-before: always;
