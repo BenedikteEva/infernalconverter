@@ -17,18 +17,15 @@ class App extends React.Component {
   }
   handleDismiss = () => this.setState({ visible: false })
   handleAbout = () => {
-    let message = <div><b>Infernal converter converts latin letters into infernal letters.</b>
+    let message = <div className="englishText"><p><b>Infernal converter converts latin letters into infernal letters.</b></p>
+      <p>Infernal is dnd language. https://forgottenrealms.fandom.com/wiki/Infernal_language</p>
 
-      https://benedikteeva.github.io/infernalconverter/public/index.html
+      <p>This is only for fun and a small gift for my son who is a dungeon master and needed some documents written in infernal for his players to translate.</p>
 
-      Infernal is dnd language.
+      <p>I have used the Barazhad Font made by "Pixel Sagas" - "Neale Davidson". which is shareware so I guess it is okay to use for this non-commercial project.
+      https://www.fontspace.com/barazhad-font-f20325</p>
 
-      This is only for fun and a small gift for my son who is a dungeon master and needed some documents written in infernal for his players to translate.
-
-      I have used the Barazhad Font made by "Pixel Sagas" - "Neale Davidson". which is shareware so I guess it is okay to use for this non-commercial project.
-      https://www.fontspace.com/barazhad-font-f20325
-
-      Besides using React I have also used react-to-print from this repository https://github.com/gregnb/react-to-print which is a great tool for any react project that requires perfect printing. </div>
+      <p>Besides using React I have also used react-to-print from this repository https://github.com/gregnb/react-to-print which is a great tool for any react project that requires perfect printing.</p> </div>
     this.setState({ message, visible: true })
 
   }
